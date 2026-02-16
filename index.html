@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>System Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <div id="loginSection" class="card center">
+    <h1>System Connect</h1>
+    <button id="loginBtn">Login With Google</button>
+  </div>
+
+  <div id="mainSection" class="hidden">
+
+    <div class="topBar">
+      <h2>Video Room</h2>
+      <button id="logoutBtn" class="danger">Logout</button>
+    </div>
+
+    <div class="roomControls">
+      <button id="createRoom">Create Room</button>
+      <input id="roomInput" placeholder="Enter Room ID">
+      <button id="joinRoom">Join Room</button>
+    </div>
+
+    <div class="videos">
+      <video id="localVideo" autoplay muted></video>
+      <video id="remoteVideo" autoplay></video>
+    </div>
+
+  </div>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
